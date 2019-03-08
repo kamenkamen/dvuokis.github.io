@@ -19,7 +19,7 @@ function game() {
     // load functions
     hideScrollBars();
     setInterval(changeGunPosition, 100);
-    setInterval(backgroundSound, 7 * 1000);
+    // setInterval(backgroundSound, 7 * 1000);
 
     // welcome screen
     document.addEventListener('keyup', welcomeScreenEvent);
@@ -169,7 +169,17 @@ function onShotDropElement() {
 
     for (const element of dropElements) {
         element.addEventListener('click', function (event) {
-            element.remove();
+            // element.remove();
+            element.innerHTML = ''; // clear element tag
+            console.log(element);
+            let parachuteRip = document.createElement('div');
+            parachuteRip.classList.add('parachute-rip');
+            let tomcatRip = document.createElement('div');
+            tomcatRip.classList.add('tomcat-rip');
+
+            element.appendChild(parachuteRip);
+            element.appendChild(tomcatRip);
+
             kills++;
             killsElement.textContent = kills;
         });
