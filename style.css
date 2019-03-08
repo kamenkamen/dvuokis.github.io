@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    cursor: url('./img/scope.png') 25 25, auto;
+    background: url("./img/white-background.png");
+    /*opacity: 1; !* change if drop nuke bomb *!*/
+}
+
+.area {
+    position: relative;
+    height: 100vh;
+    background: url("./img/background.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.start {
+    z-index: 1;
+    position: absolute;
+    width: 40%;
+    height: 360px;
+    margin-top: 100px;
+    background: rgb(34, 34, 34);
+    background: rgba(34, 34, 34, 0.75);
+    margin-left: 30%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Consolas, serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dinko {
+    background: url(./img/dinko.png);
+    width: 250px;
+    height: 270px;
+    position: absolute;
+    z-index: 1;
+    bottom: -29px;
+    left: -74px;
+}
+
+.status-bar {
+    background-color: black;
+    height: 30px;
+    width: 280px;
+    position: absolute;
+    z-index: 1;
+    font-family: Consolas, serif;
+    color: white;
+}
+
+.kills {
+    background-image: url("./img/skull.png");
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    color: white;
+    font-family: Consolas, serif;
+    text-align: center;
+}
+
+.kills p {
+    margin-top: 4px;
+    width: 100px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.bullets {
+    background-image: url("./img/bullet.png");
+    width: 15px;
+    height: 25px;
+    left: 130px;
+    position: absolute;
+}
+
+.bullets p {
+    margin-top: 4px;
+    width: 100px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.bombs {
+    background-image: url("./img/bomb.png");
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 210px;
+}
+
+.bombs p {
+    margin-top: 4px;
+    width: 100px;
+    text-align: left;
+    margin-left: 39px;
+}
+
+.drop-elements {
+    position: absolute;
+    z-index: 1;
+}
+
+.drop-element {
+    float: left;
+    position: absolute;
+    /*border: solid;*/
+}
+
+.parachute {
+    background: url(./img/parachute.png);
+    width: 50px;
+    height: 62px;
+    z-index: 1;
+    margin-left: 37px;
+    margin-top: -40px;
+    position: absolute;
+}
+
+.tomcat {
+    background: url(./img/tomcat.png);
+    width: 99px;
+    height: 65px;
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.pistol {
+    background-image: url(img/pistol-first-person.png);
+    width: 732px;
+    height: 535px;
+    margin-top: 55vh;
+    position: absolute;
+}
+
+.rifle {
+    background-image: url(./img/rifle-first-person.png);
+    width: 730px;
+    height: 388px;
+    margin-top: 55vh;
+    position: absolute;
+}
+
+.banana {
+    background-image: url(./img/banana-first-person.png);
+    width: 271px;
+    height: 408px;
+    margin-top: 55vh;
+    position: absolute;
+}
